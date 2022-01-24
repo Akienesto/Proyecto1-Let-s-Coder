@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="stylesheet" href="style/style_propio.css">
+    <link rel="stylesheet" href="style/style2.css">
 </head>
 
 <body class="body">
@@ -23,11 +23,13 @@
         <div class="logo">
             <img src="imagenes/letscoder-sin-fondo.png" alt="logo">
         </div>
-        <h1>Formulario de inscripcion:</h1>
-        <form action="bienvenida.html">
-            <fieldset>
+    </div>
+    <h1 class="inscripcion">Formulario de inscripcion:</h1>
+    <form action="bienvenida.html">
+        <div class="personales">
+            <fieldset class="field1">
                 <legend>Datos personales</legend>
-                <div class="datos">
+                <div class="datos1">
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre" required pattern="[A-Za-z]{3,15}"
                         placeholder="Indica tu nombre  ">
@@ -36,36 +38,38 @@
                         maxlength="15">
                     <label for="direccion">Dirección:</label>
                     <input type="text" name="direccion" id="direccion" placeholder="Indica tu direccion">
+                </div>
+                <div class="datos2">
                     <label for="poblacion">Población:</label>
                     <input type="text" name="poblacion" id="poblacion" placeholder="Ej:Zaragoza">
                     <label for="codigo">Código postal:</label>
-                    <input type="text" name="codigo" id="codigo" placeholder="Ej:50014">
-                    <div>
-                        <label for="provincia">Comunidad autónoma</label>
-                        <select>
-                            <option class="c_autonoma"></option>
-                            <option class="c_autonoma">Andalucía</option>
-                            <option class="c_autonoma">Aragón</option>
-                            <option class="c_autonoma">Asturias</option>
-                            <option class="c_autonoma">Islas Baleares</option>
-                            <option class="c_autonoma">Canarias</option>
-                            <option class="c_autonoma">Cantabria</option>
-                            <option class="c_autonoma">Castilla y Léon</option>
-                            <option class="c_autonoma">Castilla-La Mancha</option>
-                            <option class="c_autonoma">Cataluña</option>
-                            <option class="c_autonoma">Comunidad Valenciana</option>
-                            <option class="c_autonoma">Extremadura</option>
-                            <option class="c_autonoma">Galicia</option>
-                            <option class="c_autonoma">Comunidad de Madrid</option>
-                            <option class="c_autonoma">Comunidad Foral de Navarra</option>
-                            <option class="c_autonoma">País Vasco</option>
-                            <option class="c_autonoma">La Rioja</option>
-                            <option class="c_autonoma">Comunidad Autónoma de Ceuta</option>
-                            <option class="c_autonoma">Comunidad Autónoma de Melilla</option>
-                        </select>
-                    </div>
+                    <input type="text" name="codigo" id="codigo" placeholder="Ej:50014" pattern="[0-9]{5}">
+                    <label for="provincia">Comunidad autónoma</label>
+                    <select>
+                        <option class="c_autonoma"></option>
+                        <option class="c_autonoma">Andalucía</option>
+                        <option class="c_autonoma">Aragón</option>
+                        <option class="c_autonoma">Asturias</option>
+                        <option class="c_autonoma">Islas Baleares</option>
+                        <option class="c_autonoma">Canarias</option>
+                        <option class="c_autonoma">Cantabria</option>
+                        <option class="c_autonoma">Castilla y Léon</option>
+                        <option class="c_autonoma">Castilla-La Mancha</option>
+                        <option class="c_autonoma">Cataluña</option>
+                        <option class="c_autonoma">Comunidad Valenciana</option>
+                        <option class="c_autonoma">Extremadura</option>
+                        <option class="c_autonoma">Galicia</option>
+                        <option class="c_autonoma">Comunidad de Madrid</option>
+                        <option class="c_autonoma">Comunidad Foral de Navarra</option>
+                        <option class="c_autonoma">País Vasco</option>
+                        <option class="c_autonoma">La Rioja</option>
+                        <option class="c_autonoma">Comunidad Autónoma de Ceuta</option>
+                        <option class="c_autonoma">Comunidad Autónoma de Melilla</option>
+                    </select>
+                </div>
+                <div class="datos3">
                     <label for="telefono">Teléfono:</label>
-                    <input type="text" name="teléfono" id="teléfono">
+                    <input type="text" name="teléfono" id="teléfono" pattern="[0-9]{9}">
                     <label for="correo">Correo electrónico:</label>
                     <input type="text" name="correo" id="correo">
                     <label for="edad">Edad:</label>
@@ -78,51 +82,89 @@
                     </select>
                 </div>
             </fieldset>
-            <fieldset>
-                <legend></legend>
+        </div>
+        <div class="conocimientos">
+            <fieldset class="field2">
+                <legend>Conocimientos previos</legend>
                 <div class="check">
-                    <div>
+                    <div class="datos4">
                         <label for="html"></label>
-                        <input type="radio" id="html">HTML
+                        <input type="checkbox"id="html">HTML
                         <label for="css"></label>
-                        <input type="radio" id="css">CSS
+                        <input type="checkbox" id="css">CSS
                         <label for="javascript"></label>
-                        <input type="radio" id="javascript">JAVASCRIPT
+                        <input type="checkbox" id="javascript">JAVASCRIPT
                         <label for="html"></label>
-                        <input type="radio" id="html">HTML
+                        <input type="checkbox" id="html">HTML
                         <label for="css"></label>
-                        <input type="radio" id="css">CSS
+                        <input type="checkbox" id="css">CSS
+                        <label for="javascript"></label>
+                        <input type="checkbox" id="javascript">JAVASCRIPT
                     </div>
-                    <div>
-                        <label for="javascript"></label>
-                        <input type="radio" id="javascript">JAVASCRIPT
+                    <div class="datos5">
                         <label for="c++"></label>
-                        <input type="radio" id="c++">C/C++
+                        <input type="checkbox"id="c++">C/C++
                         <label for="python"></label>
-                        <input type="radio" id="python">PYTHON
+                        <input type="checkbox" id="python">PYTHON
                         <label for="otros"></label>
-                        <input type="radio" id="otros">OTROS
+                        <input type="checkbox" id="otros">OTROS
                         <label for="ninguno"></label>
-                        <input type="radio" id="ninguno">SIN CONOCIMIENTOS PREVIOS
+                        <input type="checkbox" id="ninguno">SIN CONOCIMIENTOS PREVIOS
                     </div>
                 </div>
             </fieldset>
-            <fieldset>
-                <div class="textarea">
-                    <textarea name="" id="" cols="40" rows="10"></textarea>
-                </div>
-                <div class="enviar">
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
+        </div>
+        <div class="modalidad">
+            <fieldset class="field3">
+                <legend>Modalidad del curso</legend>
+                <div class="curso1">
+                    <div class="datos6">
+                        <div class="datos7">
+                            <label for="quecurso">¿Qué curso quieres hacer?:</label>
+                            <select name="quecurso" id="quecurso">
+                                <option value="vacio"></option>
+                                <option value="fulltime">Full-time</option>
+                                <option value="parttime">Part-time</option>
+                            </select>
+                        </div>
+                        <div class="datos8">
+                            <label for="presencial">¿En qué modalidad?</label>
+                            <select name="presencial" id="presencial">
+                                <option value="vacio"></option>
+                                <option value="online">Online</option>
+                                <option value="presencial">Presencial</option>
+                            </select>
+                        </div>
+                        <div class="datos9">
+                            <label for="ciudad">¿En qué ciudad?</label>
+                            <select name="ciudad" id="ciudad">
+                                <option value="vacio"></option>
+                                <option value="barcelona">Barcelona</option>
+                                <option value="madrid">Madrid</option>
+                                <option value="sevilla">Sevilla</option>
+                                <option value="zaragoza">Zaragoza</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </fieldset>
-
-        </form>
-        <footer>
-            <p class="footer">Developed by Burzuri &copy;</p>
-        </footer>
-    </div>
-
+        </div>
+        <div class="adicionales">
+            <fieldset class="field4">
+                <legend>Datos adicionales</legend>
+                <div class="textarea">
+                    <textarea name="" id="" cols="60" rows="10"></textarea>
+                </div>
+            </fieldset>
+        </div>
+        <div class="botones">
+            <input type="submit" value="Enviar" class="enviar">
+            <input type="reset" value="Borrar" class="borrar">
+        </div>
+    </form>
 </body>
+<footer>
+    <p class="footer">Developed by Burzuri &copy;</p>
+</footer>
 
 </html>

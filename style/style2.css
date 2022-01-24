@@ -36,6 +36,7 @@
     background-position:center;
 }
 /* INFO */
+/* lista skills */
 .habilidades {
     margin: 10px;
     text-align: center;
@@ -47,6 +48,10 @@
 .html {
     width: 250px;
 }
+.lista1,
+.lista2 {
+    font-size: 20px;
+}
 .titulo {
     margin: 10px;
     text-align: center;
@@ -56,6 +61,7 @@
     box-shadow: 0 10px 10px 0 black;
     background-color: cornflowerblue;
 }
+/* planning */
 .planning,
 .listado {
     text-align: center;
@@ -67,10 +73,6 @@
     box-shadow: 0 10px 10px 0 black;
     background-color: cornflowerblue;
 }
-.lista1,
-.lista2 {
-    font-size: 20px;
-}
 .lista4 {
     display: flex;
     flex-direction: column;
@@ -81,6 +83,7 @@
     display: flex;
     justify-content: center;
 }
+/* tabla */
 .alumnos {
     display: flex;
     justify-content:space-around;
@@ -116,6 +119,77 @@ p {
     font-weight: bold;
     font-size: 20px;
 }
+/* FORMULARIO */
+.inscripcion {
+    margin: 15px;
+}
+legend {
+    font-weight: bold;
+    font-size: 20px;
+    background-color:steelblue;
+    border: darkblue solid 2px;
+    padding: 5px;
+}
+/* divs */
+.personales,
+.conocimientos,
+.adicionales,
+.modalidad {
+    display: flex;
+    justify-content:space-around;
+}
+/* campos */
+.field1,
+.field2,
+.field3,
+.field4 {
+    width: 921px;
+    text-align: center;
+    margin: 10px;
+    background-color: lightblue;
+    border: darkblue solid 2px;
+    border-radius: 5px;
+}
+/* divs dentro de campos */
+.datos1,
+.datos2,
+.datos3,
+.datos4,
+.datos5 {
+    margin: 15px;
+}
+.datos4,
+.datos5 {
+    display: flex;
+    justify-content: space-around;
+}
+.datos6 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+}
+.datos7,
+.datos8,
+.datos9 {
+    display: flex;
+    flex-direction: column;
+}
+/* textarea y botones */
+.textarea {
+    margin: 10px;
+}
+.enviar,
+.borrar {
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    border:black 2px solid ;
+    border-radius: 5px;
+}
+.botones {
+    display: flex;
+    justify-content: space-around;
+}
 /* BIENVENIDA */
 .bienvenida {
     display:flex;
@@ -129,8 +203,22 @@ p {
 }
 .cuadrado img {
     margin: 20px;
-    border: darkslateblue solid 3px;
+    border:navy solid 3px;
 }
+.cuadrado img {
+    animation-duration: 3.5s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 /* FOOTER */
 .footer {
     font-size: 15px;
