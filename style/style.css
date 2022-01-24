@@ -1,0 +1,109 @@
+.lista li {
+    display:inline;
+    padding: 10px;
+  
+}
+.menu {
+    background-color:gainsboro;
+    width:fit-content;
+}
+.cabecera {
+    background: url("/imagenes/background-image.jpg");
+    height:auto;
+    background-size:cover;
+    background-attachment:scroll;
+    position:relative;
+    margin: 80px;
+}
+
+.cabecera .logo{
+    margin: auto;
+    height: 180px;
+    width: 110px;
+    position: relative;
+    top: -100px;
+    left: -5%;
+}
+.titular {
+    text-align: center;
+    color: gainsboro;
+}
+.fecha {
+    text-align: center;
+}
+.fecha div {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.fechas {
+    text-align: center;
+}
+.linea {
+    width: 50%;
+}
+.numeros {
+    font-size: 50px;
+    font-weight: bold;
+    margin:0px;
+    padding: 0px;
+}
+.curso {
+    font-weight: bold;
+}
+.mentores .mentor {
+    display: table-cell;
+}
+.mentores .mentor img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+.mentores .mentor .nombres {
+    text-align: center;
+}
+.mentores .mentor .descripcion {
+    text-align:center;
+    width: 50%;
+    margin-left: 100px;
+}
+.contacto,
+.contacto1,
+.conocenos {
+    text-align: center;
+}
+.lets {
+    width: 70%;
+    text-align: center;
+    margin-left: 180px;
+    padding: 30px;
+}
+.contacto1 p span {
+    font-weight: bold;
+}
+.fecha .lunene {
+    font-size: 20px;
+    text-align: left;
+}
+.fecha .lunene .lun {
+    margin: 0px;
+    padding-right: 20px;
+}
+.fecha .lunene .ene {
+    margin: 0px;
+}
+.fecha .curon {
+    font-size: 20px;
+}
+.fecha .curon .curso {
+    margin: 0px;
+}
+.fecha .curon .on {
+    margin: 0px;
+    text-align: left;
+}
+.fecha .ins {
+    margin-top: 20px;
+}

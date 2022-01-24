@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*CABECERA*/
+.cabecera {
+    background: url("/imagenes/letscoder.jpg");
+    height:185px;
+    background-size:cover;
+    background-attachment:scroll;
+    position:relative;
+    margin: 0px;
+}
+.cabecera .logo img {
+    margin-left: 390px;
+    height: 200px;
+    width: 600px; 
+}
+.lista li {
+    display:inline;
+    padding: 10px;
+    margin-left: 135px;
+}
+.body .menu {
+    background-color:lightblue;
+    margin: 10px;
+}
+.barra {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+/*HOME*/
+.body {
+    background: url("/imagenes/fondo.jpg.crdownload");
+    background-position:center;
+}
+.prox {
+    text-align: center;
+    font-size: 40px;
+    margin: 25px;
+}
+.fechas {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;   
+}
+.fechas .fecha {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 280px;
+    /* background-color: burlywood; */
+    justify-content:space-around;
+    width: 300px;
+}
+.curso {
+    font-size: 35px;
+    background-color:lightblue;
+    border:navy 2px solid ;
+    border-radius: 10%;
+    margin: 5px;
+    text-align: center;
+}
+.fecha .on {
+    font-size: 35px;
+}
+.fecha .inscribirme {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.fechas .fecha .fecha1 {
+    display: flex;
+    justify-content: center;
+}
+.numeros,
+.mes {
+    font-size: 28px;
+    margin: 5px;
+    text-align: center;
+ }
+ .dia {
+    font-size: 28px;
+    text-align: center;
+ }
+ .caja {
+     display: flex;
+     flex-direction: column-reverse;
+     margin-bottom: 40px;
+ }
+ .boton {
+     font-size: 20px;
+ }
+.centrar {
+    text-align: center;
+}
+/*CONOCENOS*/
+.mentores .mentor img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content:start;
+    border: midnightblue 4px solid;
+    border-radius: 10%;
+}
+.mentores {
+    display: flex;
+    flex-direction:column;
+}
+.mentores .mentor {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 35px;
+}
+.mentores .mentor .nombres {
+    margin: 35px;
+    font-size: 30px;
+}
+.mentores .mentor1 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.foto1 img:hover{ 
+    transform:rotateZ(360deg);
+    transition: transform 1.5s;
+}
+.foto2 img:hover{
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 black;
+}
+.foto3 img:hover{
+    transform:  rotateX(360deg);
+    transition: transform 1.5s;
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+.mentores .mentor .texto .fer {
+    display: flex;
+    justify-content: end;
+    margin: 35px;
+}
+.descripcion {
+    font-size: 25px;
+}
+.conocenos {
+    font-size: 30px;
+    margin: 10px;
+}
+.lets {
+    font-size: 25px;
+    margin: 10px;
+    width: 80%;
+    margin-left: 125px;
+}
+/*CONTACTO*/
+.contacto {
+    font-size: 35px;
+    margin: 15px;
+}
+.contacto1 p span {
+    font-weight: bold;
+}
+.info {
+    font-size: 25px;
+    margin: 35px;
+}
+.tlf {
+    font-size: 25px;
+    margin: 15px;
+}
+.mail {
+    font-size: 25px;
+    margin: 15px;
+}
+.contacto2 {
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-end;
+    height: 200px;
+}
+.tlf img {
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+}
+.tlf img:hover {
+    transform: scale(1.3);
+    transition: transform 1s, border 1s;
+}
+.mail img {
+    width: 150px;
+    height: 150px;
+}
+.mail img:hover {
+    transform: scale(1.2);
+    transition: transform 1s, border 1s;
+}
+/* FOOTER */
+.footer {
+    font-size: 15px;
+    font-style: oblique;
+}

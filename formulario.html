@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style/style_propio.css">
+</head>
+
+<body class="body">
+    <nav class="menu">
+        <ul class=lista>
+            <li><a class="barra" href="Home.html">Home</a></li>
+            <li><a class="barra" href="conocenos.html">Conócenos</a></li>
+            <li><a class="barra" href="contacto.html">Contacto</a></li>
+            <li><a class="barra" href="info.html">Información</a></li>
+            <li><a class="barra" href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+    <div class="cabecera">
+        <div class="logo">
+            <img src="imagenes/letscoder-sin-fondo.png" alt="logo">
+        </div>
+        <h1>Formulario de inscripcion:</h1>
+        <form action="bienvenida.html">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <div class="datos">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required pattern="[A-Za-z]{3,15}"
+                        placeholder="Indica tu nombre  ">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Indica tu apellido" minlength="3"
+                        maxlength="15">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" name="direccion" id="direccion" placeholder="Indica tu direccion">
+                    <label for="poblacion">Población:</label>
+                    <input type="text" name="poblacion" id="poblacion" placeholder="Ej:Zaragoza">
+                    <label for="codigo">Código postal:</label>
+                    <input type="text" name="codigo" id="codigo" placeholder="Ej:50014">
+                    <div>
+                        <label for="provincia">Comunidad autónoma</label>
+                        <select>
+                            <option class="c_autonoma"></option>
+                            <option class="c_autonoma">Andalucía</option>
+                            <option class="c_autonoma">Aragón</option>
+                            <option class="c_autonoma">Asturias</option>
+                            <option class="c_autonoma">Islas Baleares</option>
+                            <option class="c_autonoma">Canarias</option>
+                            <option class="c_autonoma">Cantabria</option>
+                            <option class="c_autonoma">Castilla y Léon</option>
+                            <option class="c_autonoma">Castilla-La Mancha</option>
+                            <option class="c_autonoma">Cataluña</option>
+                            <option class="c_autonoma">Comunidad Valenciana</option>
+                            <option class="c_autonoma">Extremadura</option>
+                            <option class="c_autonoma">Galicia</option>
+                            <option class="c_autonoma">Comunidad de Madrid</option>
+                            <option class="c_autonoma">Comunidad Foral de Navarra</option>
+                            <option class="c_autonoma">País Vasco</option>
+                            <option class="c_autonoma">La Rioja</option>
+                            <option class="c_autonoma">Comunidad Autónoma de Ceuta</option>
+                            <option class="c_autonoma">Comunidad Autónoma de Melilla</option>
+                        </select>
+                    </div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" name="teléfono" id="teléfono">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="text" name="correo" id="correo">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" min="16" max="99">
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option value="hombre"></option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend></legend>
+                <div class="check">
+                    <div>
+                        <label for="html"></label>
+                        <input type="radio" id="html">HTML
+                        <label for="css"></label>
+                        <input type="radio" id="css">CSS
+                        <label for="javascript"></label>
+                        <input type="radio" id="javascript">JAVASCRIPT
+                        <label for="html"></label>
+                        <input type="radio" id="html">HTML
+                        <label for="css"></label>
+                        <input type="radio" id="css">CSS
+                    </div>
+                    <div>
+                        <label for="javascript"></label>
+                        <input type="radio" id="javascript">JAVASCRIPT
+                        <label for="c++"></label>
+                        <input type="radio" id="c++">C/C++
+                        <label for="python"></label>
+                        <input type="radio" id="python">PYTHON
+                        <label for="otros"></label>
+                        <input type="radio" id="otros">OTROS
+                        <label for="ninguno"></label>
+                        <input type="radio" id="ninguno">SIN CONOCIMIENTOS PREVIOS
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="textarea">
+                    <textarea name="" id="" cols="40" rows="10"></textarea>
+                </div>
+                <div class="enviar">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+            </fieldset>
+
+        </form>
+        <footer>
+            <p class="footer">Developed by Burzuri &copy;</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
