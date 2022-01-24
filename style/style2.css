@@ -42,7 +42,10 @@
 }
 .skills {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+.html {
+    width: 250px;
 }
 .titulo {
     margin: 10px;
@@ -57,6 +60,12 @@
 .listado {
     text-align: center;
     margin: 10px;
+}
+.planning:hover,
+.listado:hover {
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 black;
+    background-color: cornflowerblue;
 }
 .lista1,
 .lista2 {
@@ -88,7 +97,7 @@ th {
     font-size: 20px;
     width: 180px;
     text-align: center;
-    background-color:cornflowerblue;
+    background-color:lightsteelblue;
     border: none;
 }
 .tabla {
@@ -97,7 +106,7 @@ th {
     font-size: 20px;
     display: flex;
     justify-content:space-around;
-    background-color:aquamarine;
+    background-color:lightblue;
 }
 dt {
     font-weight: bold;
@@ -107,11 +116,6 @@ p {
     font-weight: bold;
     font-size: 20px;
 }
-/* FOOTER */
-.footer {
-    font-size: 15px;
-    font-style: oblique;
-}
 /* BIENVENIDA */
 .bienvenida {
     display:flex;
@@ -120,7 +124,15 @@ p {
     align-items:center;
     margin: 20px;
 }
-.cuadrado,
 .coder {
     margin: 20px;
+}
+.cuadrado img {
+    margin: 20px;
+    border: darkslateblue solid 3px;
+}
+/* FOOTER */
+.footer {
+    font-size: 15px;
+    font-style: oblique;
 }
