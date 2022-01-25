@@ -161,7 +161,19 @@ legend {
 .datos4,
 .datos5 {
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
+}
+.datos4 label {
+    margin: 20px;
+}
+.datos5 label {
+    margin: 20px;
+}
+.datos4 input {
+    margin: 3px;
+}
+.datos5 input {
+    margin: 4px;
 }
 .datos6 {
     display: flex;
@@ -224,3 +236,17 @@ legend {
     font-size: 15px;
     font-style: oblique;
 }
+@media only screen and (max-width: 700px) {
+    .skills {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .skills .html {
+        margin-left: 120px;
+    }
+    .cabecera .logo img {
+        width: 75%;
+        margin-inline-start: 60px;
+    }
+    }

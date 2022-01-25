@@ -32,12 +32,12 @@
                 <div class="datos1">
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre" required pattern="[A-Za-z]{3,15}"
-                        placeholder="Indica tu nombre  ">
+                        placeholder="Indica tu nombre" required>
                     <label for="apellido">Apellido:</label>
                     <input type="text" name="apellido" id="apellido" placeholder="Indica tu apellido" minlength="3"
-                        maxlength="15">
+                        maxlength="15" required>
                     <label for="direccion">Dirección:</label>
-                    <input type="text" name="direccion" id="direccion" placeholder="Indica tu direccion">
+                    <input type="text" name="direccion" id="direccion" placeholder="Indica tu direccion" required>
                 </div>
                 <div class="datos2">
                     <label for="poblacion">Población:</label>
@@ -69,7 +69,7 @@
                 </div>
                 <div class="datos3">
                     <label for="telefono">Teléfono:</label>
-                    <input type="text" name="teléfono" id="teléfono" pattern="[0-9]{9}">
+                    <input type="text" name="teléfono" id="teléfono" pattern="[0-9]{9}" required>
                     <label for="correo">Correo electrónico:</label>
                     <input type="text" name="correo" id="correo">
                     <label for="edad">Edad:</label>

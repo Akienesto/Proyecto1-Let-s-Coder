@@ -58,7 +58,7 @@
     font-size: 35px;
     background-color:lightblue;
     border:navy 2px solid ;
-    border-radius: 10%;
+    border-radius: 5px;
     margin: 5px;
     text-align: center;
 }
@@ -89,8 +89,15 @@
      flex-direction: column-reverse;
      margin-bottom: 40px;
  }
- .boton {
+.boton1 { 
      font-size: 20px;
+     border: navy solid 2px;
+     border-radius: 5px;
+     padding: 5px;
+ }
+ .boton {
+     text-decoration:none;
+     color: black;
  }
 .centrar {
     text-align: center;
@@ -207,3 +214,25 @@
     font-size: 15px;
     font-style: oblique;
 }
+@media only screen and (max-width: 700px) {
+    .lets {
+        font-size: 19px;
+        margin-inline-start: 50px;
+    }
+    .mentores .mentor .texto .descripcion {
+        font-size: 19px;
+    }
+    .mentores .mentor {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .cabecera .logo img {
+        width: 75%;
+        margin-inline-start: 60px;
+    }
+    .fechas {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    }
