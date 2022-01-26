@@ -52,14 +52,25 @@
 .lista2 {
     font-size: 20px;
 }
-.titulo {
+.titulo1 {
     margin: 10px;
     text-align: center;
 }
-.titulo:hover {
+.titulo1:hover {
     border-radius: 10px;
     box-shadow: 0 10px 10px 0 black;
     background-color: cornflowerblue;
+    width:260px
+}
+.titulo2 {
+    margin: 10px;
+    text-align: center;
+}
+.titulo2:hover {
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 black;
+    background-color: cornflowerblue;
+    width:340px
 }
 /* planning */
 .planning,
@@ -67,8 +78,16 @@
     text-align: center;
     margin: 10px;
 }
-.planning:hover,
 .listado:hover {
+    width: 68%;
+    margin-left: 215px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 black;
+    background-color: cornflowerblue;
+}
+.planning:hover {
+    width: 56%;
+    margin-left: 295px;
     border-radius: 10px;
     box-shadow: 0 10px 10px 0 black;
     background-color: cornflowerblue;
@@ -122,6 +141,7 @@ p {
 /* FORMULARIO */
 .inscripcion {
     margin: 15px;
+    text-align: center;
 }
 legend {
     font-weight: bold;
